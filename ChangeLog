@@ -316,7 +316,7 @@ Bug #3340: DNS: DNS over TCP transactions logged with wrong direction.
 Bug #3341: tcp.hdr content matches don't work as expected
 Bug #3345: App-Layer: Not all parsers register TX detect flags that should
 Bug #3346: BPF filter on command line not honored for pcap file
-Bug #3362: cross compiling not affecting rust component of surrcata
+Bug #3362: cross compiling not affecting rust component of suricata
 Bug #3376: http: pipelining tx id handling broken
 Bug #3386: Suricata is unable to get MTU from NIC after 4.1.0
 Bug #3389: EXTERNAL_NET no longer working in 5.0 as expected
