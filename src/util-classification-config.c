@@ -637,7 +637,7 @@ FILE *SCClassConfGenerateInValidDummyClassConfigFD02(void)
 FILE *SCClassConfGenerateInValidDummyClassConfigFD03(void)
 {
     const char *buffer =
-        "conig classification: not-suspicious,Not Suspicious Traffic,3\n"
+        "config classification: not-suspicious,Not Suspicious Traffic,3\n"
         "onfig classification: unknown,Unknown Traffic,3\n"
         "config classification: _badunknown,Potentially Bad Traffic, 2\n"
         "config classification: misc-activity,Misc activity,-1\n";
