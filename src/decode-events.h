@@ -164,7 +164,7 @@ enum {
     /* ESP EVENTS */
     ESP_PKT_TOO_SMALL, /**< esp packet smaller than minimum size */
 
-    /* Fragmentation reasembly events. */
+    /* Fragmentation reassembly events. */
     IPV4_FRAG_PKT_TOO_LARGE,
     IPV6_FRAG_PKT_TOO_LARGE,
     IPV4_FRAG_OVERLAP,
