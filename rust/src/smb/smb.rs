@@ -858,7 +858,7 @@ impl SMBState {
                 }
                 SCLogDebug!("Found SMB TX: id {} ver:{} cmd:{} progress {}/{} type_data {:?}",
                         tx.id, ver, _smbcmd, tx.request_done, tx.response_done, tx.type_data);
-                /* hack: apply flow file flags to file tx here to make sure its propegated */
+                /* hack: apply flow file flags to file tx here to make sure its propagated */
                 if let Some(SMBTransactionTypeData::FILE(ref mut d)) = tx.type_data {
                     tx.tx_data.update_file_flags(self.state_data.file_flags);
                     d.update_file_flags(tx.tx_data.file_flags);
