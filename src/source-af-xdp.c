@@ -172,7 +172,7 @@ typedef struct AFXDPThreadVars_ {
     char iface[AFXDP_IFACE_NAME_LENGTH];
     uint32_t ifindex;
 
-    /* AF_XDP stucture */
+    /* AF_XDP structure */
     struct UmemInfo umem;
     struct XskSockInfo xsk;
     uint32_t gro_flush_timeout;
