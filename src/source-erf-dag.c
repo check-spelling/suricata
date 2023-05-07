@@ -43,13 +43,13 @@ TmEcode NoErfDagSupportExit(ThreadVars *, const void *, void **);
 void
 TmModuleReceiveErfDagRegister(void)
 {
-    tmm_modules[TMM_RECEIVEERFDAG].name = "ReceiveErfDag";
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadInit = NoErfDagSupportExit;
-    tmm_modules[TMM_RECEIVEERFDAG].Func = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadExitPrintStats = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadDeinit = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].cap_flags = SC_CAP_NET_ADMIN;
-    tmm_modules[TMM_RECEIVEERFDAG].flags = TM_FLAG_RECEIVE_TM;
+    tmm_modules[TMM_RECEIVERFDAG].name = "ReceiveErfDag";
+    tmm_modules[TMM_RECEIVERFDAG].ThreadInit = NoErfDagSupportExit;
+    tmm_modules[TMM_RECEIVERFDAG].Func = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].ThreadExitPrintStats = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].ThreadDeinit = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].cap_flags = SC_CAP_NET_ADMIN;
+    tmm_modules[TMM_RECEIVERFDAG].flags = TM_FLAG_RECEIVE_TM;
 }
 
 void
@@ -132,16 +132,16 @@ void ReceiveErfDagCloseStream(int dagfd, int stream);
 void
 TmModuleReceiveErfDagRegister(void)
 {
-    tmm_modules[TMM_RECEIVEERFDAG].name = "ReceiveErfDag";
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadInit = ReceiveErfDagThreadInit;
-    tmm_modules[TMM_RECEIVEERFDAG].Func = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].PktAcqLoop = ReceiveErfDagLoop;
-    tmm_modules[TMM_RECEIVEERFDAG].PktAcqBreakLoop = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadExitPrintStats =
+    tmm_modules[TMM_RECEIVERFDAG].name = "ReceiveErfDag";
+    tmm_modules[TMM_RECEIVERFDAG].ThreadInit = ReceiveErfDagThreadInit;
+    tmm_modules[TMM_RECEIVERFDAG].Func = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].PktAcqLoop = ReceiveErfDagLoop;
+    tmm_modules[TMM_RECEIVERFDAG].PktAcqBreakLoop = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].ThreadExitPrintStats =
         ReceiveErfDagThreadExitStats;
-    tmm_modules[TMM_RECEIVEERFDAG].ThreadDeinit = NULL;
-    tmm_modules[TMM_RECEIVEERFDAG].cap_flags = 0;
-    tmm_modules[TMM_RECEIVEERFDAG].flags = TM_FLAG_RECEIVE_TM;
+    tmm_modules[TMM_RECEIVERFDAG].ThreadDeinit = NULL;
+    tmm_modules[TMM_RECEIVERFDAG].cap_flags = 0;
+    tmm_modules[TMM_RECEIVERFDAG].flags = TM_FLAG_RECEIVE_TM;
 }
 
 /**
