@@ -29,7 +29,7 @@
 #include "util-unittest.h"
 
 /** \brief turn 32 bit mask into CIDR
- *  \retval cidr cidr value or -1 if the netmask can't be expressed as cidr
+ *  \retval cidr The cidr value or -1 if the netmask can't be expressed as cidr
  */
 int CIDRFromMask(uint32_t netmask)
 {
