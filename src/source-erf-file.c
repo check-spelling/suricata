@@ -79,16 +79,16 @@ static TmEcode DecodeErfFile(ThreadVars *, Packet *, void *);
 void
 TmModuleReceiveErfFileRegister(void)
 {
-    tmm_modules[TMM_RECEIVEERFFILE].name = "ReceiveErfFile";
-    tmm_modules[TMM_RECEIVEERFFILE].ThreadInit = ReceiveErfFileThreadInit;
-    tmm_modules[TMM_RECEIVEERFFILE].Func = NULL;
-    tmm_modules[TMM_RECEIVEERFFILE].PktAcqLoop = ReceiveErfFileLoop;
-    tmm_modules[TMM_RECEIVEERFFILE].PktAcqBreakLoop = NULL;
-    tmm_modules[TMM_RECEIVEERFFILE].ThreadExitPrintStats =
+    tmm_modules[TMM_RECEIVERFFILE].name = "ReceiveErfFile";
+    tmm_modules[TMM_RECEIVERFFILE].ThreadInit = ReceiveErfFileThreadInit;
+    tmm_modules[TMM_RECEIVERFFILE].Func = NULL;
+    tmm_modules[TMM_RECEIVERFFILE].PktAcqLoop = ReceiveErfFileLoop;
+    tmm_modules[TMM_RECEIVERFFILE].PktAcqBreakLoop = NULL;
+    tmm_modules[TMM_RECEIVERFFILE].ThreadExitPrintStats =
         ReceiveErfFileThreadExitStats;
-    tmm_modules[TMM_RECEIVEERFFILE].ThreadDeinit = NULL;
-    tmm_modules[TMM_RECEIVEERFFILE].cap_flags = 0;
-    tmm_modules[TMM_RECEIVEERFFILE].flags = TM_FLAG_RECEIVE_TM;
+    tmm_modules[TMM_RECEIVERFFILE].ThreadDeinit = NULL;
+    tmm_modules[TMM_RECEIVERFFILE].cap_flags = 0;
+    tmm_modules[TMM_RECEIVERFFILE].flags = TM_FLAG_RECEIVE_TM;
 }
 
 /**
