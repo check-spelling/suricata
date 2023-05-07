@@ -308,7 +308,7 @@ Bug #4807: packetpool: packets in pool may have capture method ReleasePacket cal
 Bug #4804: af-packet: tpacket v3 if/down logic broken
 Bug #4803: af-packet: up/down logic leaks resources in autofp (tpacket v2)
 Bug #4801: af-packet: tpacket v3 socket reference handling broken
-Bug #4800: af-packet: flag colision between kernel and Suricata
+Bug #4800: af-packet: flag collision between kernel and Suricata
 Bug #4785: af-packet: threads sometimes get stuck in capture
 Bug #4779: flow/bypass: flow worker not performing flow timeout "housekeeping"
 Bug #4778: flow/bypass: app-layer/stream resources not freed when bypass activated
