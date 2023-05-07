@@ -2470,7 +2470,7 @@ Optimization #1041: remove mkinstalldirs from git
 - api for adding and selecting runmodes was added
 - pcap logging / recording output was added
 - basic SCTP protocol parsing was added
-- more fine grained CPU affinity setting support was added
+- more fine-grained CPU affinity setting support was added
 - stream engine inspects stream in larger chunks
 - fast_pattern support for http_method content modifier (#255)
 - negation support for isdataat keyword (#257)
