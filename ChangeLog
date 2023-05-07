@@ -1480,7 +1480,7 @@ Feature #1373: Allow different reassembly depth for filestore rules
 Feature #1495: EtherNet/IP and CIP support
 Feature #1583: tls: validity fields (notBefore and notAfter)
 Feature #1657: Per application layer stats
-Feature #1896: Reimplement tls.subject and tls.isserdn
+Feature #1896: Reimplement tls.subject and tls.issuerdn
 Feature #1903: tls: tls_cert_valid and tls_cert_expired keywords
 Feature #1907: http_request_line and http_response_line
 Optimization #1044: TLS buffers evaluated by fast_pattern matcher.
